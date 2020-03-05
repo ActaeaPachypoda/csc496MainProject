@@ -12,3 +12,5 @@ We need an architecture that allows users to enter data but not access the under
 
 ## How?
 We plan on using docker and spark to achieve these goals.
+For our front end we will be using port: 443 because that is the https port.
+for the back end we will be using port: 9000
