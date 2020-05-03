@@ -10,3 +10,7 @@ RUN apt-get update \
     && conda install  -y -q intelpython2_full=2018.0.1 python=2 \ 
     && pip install --upgrade pip \ 
     && pip install -r /app/requirements.txt
+FROM jupyter/scipy-notebook
+RUN conda install --quiet --yes \
+    'mlflow=1.0.0' \
+    'psycopg2'
